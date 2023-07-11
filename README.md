@@ -1,70 +1,139 @@
-# Getting Started with Create React App
+# Library Manager
+A minimalistic easy to use interface for viewing, managing and renting books with user identity.
+### Home
+![Alt text](image.png)
+### Register page with form validations
+![Alt text](image-3.png)
+### Login page
+![Alt text](image-1.png)
+### Home page after login
+![Alt text](image-4.png)
+### Profile page
+![Alt text](image-5.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About
+A simple library manager application built with `react` and a dummy backend setup with `json-server`. The app enables a user to view a list of books and rent them after creating an account. The `Books` tab shows all the available books for renting. Anyone visiting this application can browse the books catalog but to rent a particular book the user has to login. The application has several validations in place to facilitate consistency in the data stored.
+For example,
+1. Users cannot create duplicate accounts.
+2. Users cannot use same email for multiple accounts.
+3. Wrong username/password prompts.
+4. Users will be able to rent only one copy of a book. If they have rented already then `Rent` option will be disabled.
 
-## Available Scripts
+### For Developers
+This application is built with various useful libraries like `react-router`, `react-toastify`, `react-redux`, `axios`, `redux-thunk`, `json-server` and many more. The state of the application is maintained with `Redux`. `redux-thunk` is used as a middleware to make api requests and dispatch appropriate actions. The password is stored before encryption and is read from database by decryption with a popular encryption library `bcryptjs`. The styling of this application is done by a mix of `plain css`, `styled-components`, `material-ui`. Apart from these various other useful react concepts like `reusable components`, `Context api`, `debouncing`, `memoizing` are explored in this project.
 
-In the project directory, you can run:
+### Project Setup
+Please follow the below steps to get this project running in your local:
+1. Clone this project in your local machine with below command. (Make sure you have git installed in your machine)
 
-### `npm start`
+```ruby
+git clone https://github.com/ratul-gangopadhyay/lib-manager.git
+```
+2. Install `node_modules` by running the following commands:
+```ruby
+cd lib-manager
+npm install
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. Add a `db.json` file in your root folder.
+4. Copy the following json and paste in the `db.json` file that you created.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```ruby
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "rating": 4.5,
+      "price": 12.99,
+      "genre": "Classic",
+      "copies": 97
+    },
+    {
+      "id": 2,
+      "title": "1984",
+      "author": "George Orwell",
+      "rating": 4.3,
+      "price": 9.99,
+      "genre": "Dystopian",
+      "copies": 149
+    },
+    {
+      "id": 3,
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "rating": 4.7,
+      "price": 11.99,
+      "genre": "Romance",
+      "copies": 79
+    },
+    {
+      "id": 4,
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "rating": 4.2,
+      "price": 10.99,
+      "genre": "Classic",
+      "copies": 119
+    },
+    {
+      "id": 5,
+      "title": "To the Lighthouse",
+      "author": "Virginia Woolf",
+      "rating": 4,
+      "price": 8.99,
+      "genre": "Modernist",
+      "copies": 89
+    },
+    {
+      "id": 6,
+      "title": "Animal Farm",
+      "author": "George Orwell",
+      "rating": 4.1,
+      "price": 7.99,
+      "genre": "Political Satire",
+      "copies": 198
+    },
+    {
+      "id": 7,
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "rating": 4.4,
+      "price": 10.49,
+      "genre": "Coming-of-age",
+      "copies": 95
+    },
+    {
+      "id": 8,
+      "title": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "rating": 4.8,
+      "price": 19.99,
+      "genre": "Fantasy",
+      "copies": 180
+    },
+    {
+      "id": 9,
+      "title": "Brave New World",
+      "author": "Aldous Huxley",
+      "rating": 4.6,
+      "price": 9.49,
+      "genre": "Dystopian",
+      "copies": 68
+    }
+  ],
+  "users": []
+}
+```
+5. Run the following command to start the application.
+```ruby
+npm start
+```
+**Please use dummy non-existing emails while creating user accounts.**
 
-### `npm test`
+Note: The `json-server` is started automatically with the above command.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

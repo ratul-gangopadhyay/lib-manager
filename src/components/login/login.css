@@ -1,0 +1,20 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 78vh;
+  width: 100vw;
+}
+
+.login {
+  color: #121924;
+  background-color: #dddddd3c;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 20rem;
+  border-radius: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding: 2rem;
+}

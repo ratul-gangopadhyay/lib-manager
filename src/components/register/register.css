@@ -1,0 +1,20 @@
+.register {
+  display: flex;
+  flex-direction: column;
+  color: #121924;
+  gap: 1.5rem;
+  width: 40rem;
+  border-radius: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #dddddd3c;
+  padding: 2rem;
+  font-weight: bold;
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 78vh;
+  width: 100vw;
+}

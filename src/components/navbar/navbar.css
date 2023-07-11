@@ -1,0 +1,33 @@
+.nav-items {
+  padding: 17px;
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+  font-family: Calibri;
+}
+
+.nav-items:hover {
+  color: #1b1f33;
+  transition: 300ms ease;
+}
+
+.nav-items.active {
+  color: #1b1f33;
+}
+
+.nav-items-from-left {
+  display: flex;
+  float: left;
+}
+
+.nav-items-from-right {
+  display: flex;
+  float: right;
+}
+
+.welcome-user {
+  color: white;
+  padding: 18px;
+  margin: 0px;
+}
