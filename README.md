@@ -1,15 +1,15 @@
 # Library Manager
 A minimalistic easy to use interface for viewing, managing and renting books with user identity.
 ### Home
-![Alt text](image.png)
+![image](https://github.com/ratul-gangopadhyay/lib-manager/assets/111196705/8742dadd-2849-4e3a-8247-b89fcf1086c4)
 ### Register page with form validations
-![Alt text](image-3.png)
+![image](https://github.com/ratul-gangopadhyay/lib-manager/assets/111196705/84e484c8-a012-4ce2-9ff4-64196d71810e)
 ### Login page
-![Alt text](image-1.png)
+![image](https://github.com/ratul-gangopadhyay/lib-manager/assets/111196705/3f3bc514-4204-4ddc-9c4a-a2c110eae9cc)
 ### Home page after login
-![Alt text](image-4.png)
+![image](https://github.com/ratul-gangopadhyay/lib-manager/assets/111196705/7d42872c-d3f0-45f3-a83e-a5c190834189)
 ### Profile page
-![Alt text](image-5.png)
+![image](https://github.com/ratul-gangopadhyay/lib-manager/assets/111196705/f6b3fb62-5939-49a4-8701-6d540ed370d2)
 
 ## About
 A simple library manager application built with `react` and a dummy backend setup with `json-server`. The app enables a user to view a list of books and rent them after creating an account. The `Books` tab shows all the available books for renting. Anyone visiting this application can browse the books catalog but to rent a particular book the user has to login. The application has several validations in place to facilitate consistency in the data stored.
