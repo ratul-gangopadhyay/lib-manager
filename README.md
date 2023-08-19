@@ -1,7 +1,7 @@
 # Library Manager
 A minimalistic easy to use interface for viewing, managing and renting books with user identity.
 ### Home
-![image](https://github.com/ratul-gangopadhyay/lib-manager/assets/111196705/8742dadd-2849-4e3a-8247-b89fcf1086c4)
+![image](https://github.com/ratul-gangopadhyay/lib-manager/assets/111196705/968e9695-3b92-43ef-9e36-007658fda308)
 ### Register page with form validations
 ![image](https://github.com/ratul-gangopadhyay/lib-manager/assets/111196705/84e484c8-a012-4ce2-9ff4-64196d71810e)
 ### Login page
