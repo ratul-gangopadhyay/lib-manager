@@ -28,7 +28,7 @@ const TABLE_CONFIGS = [
     attribute: 'rating',
   },
   {
-    header: 'Price',
+    header: 'Price ($)',
     attribute: 'price',
   },
   {
