@@ -47,10 +47,10 @@ const Login = () => {
         auth.login(user);
         navigate(redirectPath, { replace: true });
       } else {
-        errorToast(registrationMessages.wrongPassword);
+        errorToast(registrationMessages.wrongAttempt);
       }
     } else {
-      errorToast(registrationMessages.wrongUser);
+      errorToast(registrationMessages.wrongAttempt);
     }
   };
 
